@@ -10,7 +10,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="inline-flex items-center gap-2 px-6 h-11 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#FDECE8] dark:hover:bg-[#252523] hover:border-[#E8A690] dark:hover:border-[#C48060] transition-all text-sm font-medium"
+        className="inline-flex items-center gap-2 px-6 h-11 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#F3EFF8] dark:hover:bg-[#252523] hover:border-[#9B7FBF] dark:hover:border-[#B89AD4] transition-all text-sm font-medium"
       >
         <ArrowLeft className="h-4 w-4" />
         Back to home

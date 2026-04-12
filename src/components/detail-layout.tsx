@@ -72,7 +72,7 @@ export function DetailLayout({
               <Badge
                 key={tag}
                 variant="secondary"
-                className="gap-1.5 text-xs font-light tracking-wide px-3 py-1 bg-[#FDECE8] dark:bg-[#3A2A25] text-[#2A2A2A] dark:text-[#E8A690] border-0"
+                className="gap-1.5 text-xs font-light tracking-wide px-3 py-1 bg-[#F3EFF8] dark:bg-[#2A2535] text-[#2A2A2A] dark:text-[#9B7FBF] border-0"
               >
                 <Tag className="h-3 w-3" />
                 {tag}
@@ -86,7 +86,7 @@ export function DetailLayout({
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="h-px bg-gradient-to-r from-[#E8A690] via-[#E8E4DE] to-transparent dark:from-[#C48060] dark:via-[#2E2C29] to-transparent mb-12"
+          className="h-px bg-gradient-to-r from-[#9B7FBF] via-[#E8E4DE] to-transparent dark:from-[#B89AD4] dark:via-[#2E2C29] to-transparent mb-12"
         />
 
         {/* Content */}
@@ -111,7 +111,7 @@ export function DetailLayout({
                         if (line.trim().startsWith("- ")) {
                           return (
                             <div key={j} className="flex items-start gap-4">
-                              <span className="mt-2.5 h-1.5 w-1.5 rounded-full bg-[#E8A690] dark:bg-[#C48060] flex-shrink-0" />
+                              <span className="mt-2.5 h-1.5 w-1.5 rounded-full bg-[#9B7FBF] dark:bg-[#B89AD4] flex-shrink-0" />
                               <span className="text-[#555555] dark:text-[#A8A8A0] font-light leading-relaxed">
                                 {line.trim().replace(/^- /, "")}
                               </span>
@@ -135,7 +135,7 @@ export function DetailLayout({
                 <ul key={i} className="space-y-3 my-6">
                   {items.map((item, j) => (
                     <li key={j} className="flex items-start gap-4">
-                      <span className="mt-2.5 h-1.5 w-1.5 rounded-full bg-[#E8A690] dark:bg-[#C48060] flex-shrink-0" />
+                      <span className="mt-2.5 h-1.5 w-1.5 rounded-full bg-[#9B7FBF] dark:bg-[#B89AD4] flex-shrink-0" />
                       <span className="text-[#555555] dark:text-[#A8A8A0] font-light leading-relaxed">
                         {item.trim().replace(/^- /, "")}
                       </span>
@@ -164,7 +164,7 @@ export function DetailLayout({
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 h-11 px-7 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#FDECE8] dark:hover:bg-[#252523] hover:border-[#E8A690] dark:hover:border-[#C48060] hover:text-[#2A2A2A] dark:hover:text-[#E8A690] transition-all text-sm font-medium"
+              className="inline-flex items-center gap-2 h-11 px-7 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#F3EFF8] dark:hover:bg-[#252523] hover:border-[#9B7FBF] dark:hover:border-[#B89AD4] hover:text-[#2A2A2A] dark:hover:text-[#9B7FBF] transition-all text-sm font-medium"
             >
               Visit Project
               <ArrowRight className="h-4 w-4" />

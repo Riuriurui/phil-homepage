@@ -34,7 +34,7 @@ export function ContactSection() {
               href="https://linkedin.com/in/philipp"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 h-11 px-7 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#FDECE8] dark:hover:bg-[#252523] hover:border-[#E8A690] dark:hover:border-[#C48060] hover:text-[#2A2A2A] dark:hover:text-[#E8A690] transition-all text-sm font-medium"
+              className="inline-flex items-center justify-center gap-2 h-11 px-7 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] text-[#2A2A2A] dark:text-[#F4F1ED] hover:bg-[#F3EFF8] dark:hover:bg-[#252523] hover:border-[#9B7FBF] dark:hover:border-[#B89AD4] hover:text-[#2A2A2A] dark:hover:text-[#9B7FBF] transition-all text-sm font-medium"
             >
               LinkedIn
               <ArrowUpRight className="h-4 w-4" />

@@ -20,7 +20,7 @@ export function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="flex items-center gap-3 mb-20"
         >
-          <FolderOpen className="h-4 w-4 text-[#E8A690] dark:text-[#C48060]" />
+          <FolderOpen className="h-4 w-4 text-[#9B7FBF] dark:text-[#B89AD4]" />
           <span className="text-xs tracking-[0.2em] uppercase text-[#8E8E8E] dark:text-[#6E6E68] font-light">
             Projects
           </span>
@@ -40,11 +40,11 @@ export function ProjectsSection() {
                 <Card className="group h-full overflow-hidden border border-[#E8E4DE] dark:border-[#2E2C29] bg-white dark:bg-[#252523] shadow-sm hover:shadow-xl hover:border-[#D4D0CA] dark:hover:border-[#3A3835] transition-all duration-500 cursor-pointer">
                   <CardContent className="p-8 flex flex-col h-full relative">
                     {/* Top accent bar */}
-                    <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#E8A690] to-[#FDECE8] dark:from-[#C48060] dark:to-[#3A2A25] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#9B7FBF] to-[#F3EFF8] dark:from-[#B89AD4] dark:to-[#2A2535] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     <div className="flex-1">
                       {/* Title */}
-                      <h3 className="text-2xl font-medium mb-4 text-[#2A2A2A] dark:text-[#F4F1ED] group-hover:text-[#E8A690] dark:group-hover:text-[#C48060] transition-colors duration-300">
+                      <h3 className="text-2xl font-medium mb-4 text-[#2A2A2A] dark:text-[#F4F1ED] group-hover:text-[#9B7FBF] dark:group-hover:text-[#B89AD4] transition-colors duration-300">
                         {item.title}
                       </h3>
 
@@ -60,7 +60,7 @@ export function ProjectsSection() {
                         <Badge
                           key={tag}
                           variant="secondary"
-                          className="text-xs font-light tracking-wide bg-[#FDECE8] dark:bg-[#3A2A25] text-[#2A2A2A] dark:text-[#E8A690] border-0"
+                          className="text-xs font-light tracking-wide bg-[#F3EFF8] dark:bg-[#2A2535] text-[#2A2A2A] dark:text-[#9B7FBF] border-0"
                         >
                           {tag}
                         </Badge>

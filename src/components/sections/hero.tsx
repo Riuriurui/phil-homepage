@@ -13,7 +13,7 @@ export function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 overflow-hidden">
       {/* Subtle background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-gradient-to-b from-[#FDECE8]/30 dark:from-[#3A2A25]/30 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-gradient-to-b from-[#F3EFF8]/30 dark:from-[#2A2535]/30 to-transparent rounded-full blur-3xl" />
       </div>
 
       {/* Hero text with EB Garamond */}
