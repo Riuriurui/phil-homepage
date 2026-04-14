@@ -11,9 +11,9 @@ const HERO_TEXT =
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 overflow-hidden">
-      {/* Subtle background */}
+      {/* Subtle background - uses CSS variable for accent */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-gradient-to-b from-[#F3EFF8]/30 dark:from-[#2A2535]/30 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-gradient-to-b from-accent/40 dark:from-accent/20 to-transparent rounded-full blur-3xl" />
       </div>
 
       {/* Hero text with EB Garamond */}
@@ -28,7 +28,7 @@ export function Hero() {
             "font-garamond font-normal",
             "text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl",
             "leading-[1.25] tracking-tight",
-            "text-[#2A2A2A] dark:text-[#F4F1ED]"
+            "text-foreground"
           )}
         >
           {HERO_TEXT}
@@ -47,10 +47,10 @@ export function Hero() {
           transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-xs tracking-[0.2em] uppercase text-[#8E8E8E] dark:text-[#6E6E68] font-light">
+          <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-light">
             Scroll
           </span>
-          <ChevronDown className="h-4 w-4 text-[#8E8E8E] dark:text-[#6E6E68]" />
+          <ChevronDown className="h-4 w-4 text-muted-foreground" />
         </motion.div>
       </motion.div>
     </section>

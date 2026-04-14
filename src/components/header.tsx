@@ -31,14 +31,14 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         scrolled
-          ? "bg-[#F4F1ED]/90 dark:bg-[#1A1A18]/90 backdrop-blur-2xl border-b border-[#E8E4DE] dark:border-[#2E2C29]"
+          ? "bg-background/90 dark:bg-background/90 backdrop-blur-2xl border-b border-border"
           : "bg-transparent"
       )}
     >
       <nav className="max-w-6xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-medium text-base tracking-tight text-[#2A2A2A] dark:text-[#F4F1ED]">
-          Philipp<span className="text-[#8E8E8E] dark:text-[#6E6E68]">.pm</span>
+        <Link href="/" className="font-medium text-base tracking-tight text-foreground">
+          Philipp<span className="text-muted-foreground">.pm</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -47,10 +47,10 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-[#8E8E8E] dark:text-[#6E6E68] hover:text-[#2A2A2A] dark:hover:text-[#F4F1ED] transition-colors duration-200 relative group"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 relative group"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#2A2A2A] dark:bg-[#F4F1ED] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </div>
@@ -61,10 +61,10 @@ export function Header() {
 
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger className="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full border border-[#D4D0CA] dark:border-[#3A3835] bg-[#F4F1ED]/50 dark:bg-[#252523]/80 backdrop-blur-sm hover:bg-[#E8E4DE] dark:hover:bg-[#2E2C29] transition-all cursor-pointer">
-              <Menu className="h-4 w-4 text-[#2A2A2A] dark:text-[#F4F1ED]" />
+            <SheetTrigger className="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full border border-border bg-background/50 dark:bg-background/80 backdrop-blur-sm hover:bg-muted transition-all cursor-pointer">
+              <Menu className="h-4 w-4 text-foreground" />
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 bg-[#F4F1ED] dark:bg-[#1A1A18] border-l border-[#E8E4DE] dark:border-[#2E2C29] p-8">
+            <SheetContent side="right" className="w-80 bg-background dark:bg-background border-l border-border p-8">
               <nav className="flex flex-col gap-8 mt-8">
                 {navLinks.map((link, i) => (
                   <motion.div
@@ -76,7 +76,7 @@ export function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className="text-2xl font-light text-[#2A2A2A] dark:text-[#F4F1ED] hover:text-[#8E8E8E] dark:hover:text-[#6E6E68] transition-colors"
+                      className="text-2xl font-light text-foreground hover:text-primary transition-colors"
                     >
                       {link.label}
                     </Link>
